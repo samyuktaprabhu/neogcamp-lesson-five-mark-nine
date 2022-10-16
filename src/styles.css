@@ -1,4 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
 .App {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
   text-align: center;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+:root {
+  --primary-color: #ffdfd3;
+  --dark-gray: #64748b;
+  --off-white: #f3f4f6;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container-center {
+  max-width: 600px;
+  margin: auto;
+}
+
+.link-primary {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.link-secondary {
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+hr {
+  margin: 1rem 0rem;
+}
+
+.list-non-bullet {
+  list-style-type: none;
+  padding-inline-start: 0%;
+}
+
+#item-box {
+  border: solid;
+  text-align: left;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  width: auto;
+}
+
+.menu-box {
+  border: solid;
+  display: inline-block;
+  text-align: left;
+  width: auto;
+  margin: 0.5rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-width: 0.1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: white;
 }

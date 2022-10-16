@@ -21,10 +21,8 @@ const foodDictionary = {
 };
 
 export default function App() {
-  // const [second, setSecond] = useState(1);
-  // const [third, setThird] = useState(2);
   const [foodType, setFoodType] = useState("Starters");
-  // const foodTypes = ["Starters", "Main Course", "Desserts"];
+
   const foods = Object.keys(foodDictionary);
   function foodClickHandler(food) {
     switch (food) {
@@ -44,15 +42,23 @@ export default function App() {
       <h1>F🥘🍩d Rec🥗mmendati🍪n</h1>
       <h2>Select your meal type 🍔 </h2>
       {foods.map((food) => {
-        return <span onClick={() => foodClickHandler(food)}>{food}</span>;
+        return (
+          <span onClick={() => foodClickHandler(food)}>
+            <ul className="menu-box">{food}</ul>
+          </span>
+        );
       })}
       <hr />
       {foodDictionary[foodType].map((item) => {
         return (
           <>
             <ul id="item-box">
-              <li className="item">{item.name}</li>
-              <li className="item">{item.rating}</li>
+              <li className="item list-non-bullet">
+                <h3>{item.name}</h3>
+              </li>
+              <li className="item list-non-bullet">
+                <h5>Rating: {item.rating}</h5>
+              </li>
             </ul>
           </>
         );
