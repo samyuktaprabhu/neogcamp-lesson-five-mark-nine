@@ -7,7 +7,7 @@
   <p align="center">
     I love food and so do you! Want some great food recommendations? 
     <br />
-    <a href="https://93rfw2.csb.app/"><strong>Click here to check them out »</strong></a>
+    <a href="https://h1zi3b.csb.app/"><strong>Click here to check them out »</strong></a>
     <br />
     <br />
     <a href=""></a>
