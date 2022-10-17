@@ -3,20 +3,56 @@ import "./styles.css";
 
 const foodDictionary = {
   Starters: [
-    { name: "Paneer Tikka", rating: "9/10" },
-    { name: "Mushroom Tikka", rating: "9.5/10" },
-    { name: "Babycorn Tikka", rating: "10/10" }
+    {
+      name: "Paneer Tikka",
+      description: "Medium spicy dish containing Paneer",
+      rating: "9/10"
+    },
+    {
+      name: "Mushroom Pepper",
+      description: "More spicy dish containing Mushroom",
+      rating: "9.5/10"
+    },
+    {
+      name: "Babycorn Tikka",
+      description: "Medium spicy dish containing Babycorn",
+      rating: "10/10"
+    }
   ],
   "Main Course": [
-    { name: "Paneer Tikka Masala", rating: "9/10" },
-    { name: "Mushroom Tikka Masala", rating: "9.5/10" },
-    { name: "Babycorn Tikka Masala", rating: "9.7/10" }
+    {
+      name: "Paneer Tikka Masala",
+      description: "Medium spicy dish containing Paneer",
+      rating: "9/10"
+    },
+    {
+      name: "Mushroom Pepper Masala",
+      description: "Very spicy dish containing Mushroom",
+      rating: "9.5/10"
+    },
+    {
+      name: "Babycorn Masala",
+      description: "Less spicy dish containing Babycorn",
+      rating: "9.7/10"
+    }
   ],
 
   Desserts: [
-    { name: "Tiramisu", rating: "9.5/10" },
-    { name: "Gulab Jamoon", rating: "9.5/10" },
-    { name: "Knoppers", rating: "10/10" }
+    {
+      name: "Tiramisu",
+      description: "Mangalorean special ice-cream by Pabbas",
+      rating: "9.5/10"
+    },
+    {
+      name: "Gulab Jamoon",
+      description: "Authentic Indiaan sweet dish",
+      rating: "9.5/10"
+    },
+    {
+      name: "Knoppers",
+      description: "German Wafers with chocolate filling",
+      rating: "10/10"
+    }
   ]
 };
 
@@ -55,6 +91,9 @@ export default function App() {
             <ul id="item-box">
               <li className="item list-non-bullet">
                 <h3>{item.name}</h3>
+              </li>
+              <li className="item list-non-bullet">
+                <h4>{item.description}</h4>
               </li>
               <li className="item list-non-bullet">
                 <h5>Rating: {item.rating}</h5>
